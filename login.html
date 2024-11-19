@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <h1>Login</h1>
+            <div class="input-controls">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter The Email" autocomplete="email">
+                <div class="error"></div>
+            </div>
+            <div class="input-controls">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter The Password" autocomplete="password">
+                <div class="error"></div>
+            </div>
+            <div class="forgot-password">
+                <a href="password.html" style="display: flex; justify-content: flex-end; text-decoration: none; margin-top: 5px; margin-bottom: -5px;">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="success-message" id="success-message">Login Successful</div>
+            <p>Create Account ? <a href="index.html">Sign-up</a> here</p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
